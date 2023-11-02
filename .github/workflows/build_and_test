@@ -1,5 +1,6 @@
 name: Build and tests eshop
 
+
 on:
     workflow_dispatch:
 
@@ -7,10 +8,11 @@ jobs:
     Install:
         runs-on: ubuntu-latest
 
+
         steps:
             - name: Code checkout
             uses: actions/checkout@v4.1.1
-            with:
+            with: 
                 token: ${{ secret.WORKFLOW_TOKEN }}
 
             - name: Setup NodeJS
