@@ -54,5 +54,5 @@ jobs:
             
             - name: Build
               run: |
-               npm rebuild node-saas --force
-               npm run build --
+               npm rebuild node-sass --force
+               npm run build -- --colors
